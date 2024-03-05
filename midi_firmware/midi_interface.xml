@@ -1,0 +1,10 @@
+<library path="midi_firmware">
+    <class name="midi_firmware/MidiInterface"
+      type="midi_firmware::MidiInterface"
+      base_class_type="hardware_interface::SystemInterface"
+    >
+      <description>
+        Midi Hardware Interface
+      </description>
+    </class>
+  </library>
