@@ -13,7 +13,7 @@
         <xacro:unless value="$(arg is_sim)">
             <hardware>
                 <plugin>midi_firmware/MidiInterface</plugin>
-                <param name="port">/dev/ttyACM1</param>
+                <param name="port">/dev/ttyACM0</param>
             </hardware>
         </xacro:unless>
         <!-- ros2_control Common Interfaces -->

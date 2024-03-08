@@ -2,12 +2,12 @@
 
 // Texas Instruments DRV8701 motor driver H-Bridge Connection PINs
 #define left_en 2  // PWM left
-#define right_en 13  // PWM right
+#define right_en 10  // PWM right
 #define left_ph 8  // Dir Motor left
 #define left_vref 7  // Dir Motor 
-#define right_ph 13  // Dir Motor A right
-#define right_vref 12  // Dir Motor A
-#define right_nsleep 11
+#define right_ph 9  // Dir Motor A right
+#define right_vref 13  // Dir Motor A
+#define right_nsleep 12
 #define left_nsleep 41 
 // Wheel Encoders Connection PINs
 #define right_encoder_phaseA 3  // Interrupt 
@@ -175,8 +175,8 @@ void loop() {
   unsigned long current_millis = millis();
   if(current_millis - last_millis >= interval)
   {
-    right_wheel_meas_vel = (10 * right_encoder_counter * (60.0/385.0)) * 0.10472;
-    left_wheel_meas_vel = (10 * left_encoder_counter * (60.0/385.0)) * 0.10472;
+    right_wheel_meas_vel = (10.0 * (double)right_encoder_counter * (60.0/200704.0)) * 0.10472; //rad/sn
+    left_wheel_meas_vel = (10.0 * (double)right_encoder_counter * (60.0/200704.0)) * 0.10472; //rad/sn 
     
     rightMotor.Compute();
     leftMotor.Compute();

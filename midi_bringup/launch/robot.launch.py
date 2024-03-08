@@ -27,7 +27,7 @@ def generate_launch_description():
     
     joystick = IncludeLaunchDescription(
         os.path.join(
-            get_package_share_directory("bumperbot_controller"),
+            get_package_share_directory("midi_controller"),
             "launch",
             "joystick_teleop.launch.py"
         ),

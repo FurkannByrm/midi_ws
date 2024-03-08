@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/furkan/midi_ws/install/midi_firmware/include/**",
+        "/home/furkan/midi_ws/install/midi_controller/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/furkan/midi_ws/src/midi_controller/include/**",
+        "/home/furkan/midi_ws/src/midi_firmware/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
