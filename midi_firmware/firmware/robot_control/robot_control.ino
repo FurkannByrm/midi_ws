@@ -1,10 +1,10 @@
 #include <PID_v1_bc.h>
 
 // Texas Instruments DRV8701 motor driver H-Bridge Connection PINs
-#define left_ph 0  // Dir Motor left
-#define left_en 1  // PWM left
-#define left_vref 13  // Dir Motor 
-#define left_nsleep 19 
+#define left_ph 18  // Dir Motor left
+#define left_en 13  // PWM left
+#define left_vref 6  // Dir Motor 
+#define left_nsleep 7 
 
 #define right_en 10  // PWM right
 #define right_ph 9  // Dir Motor A right
