@@ -20,22 +20,22 @@ def generate_launch_description():
             "controller.launch.py"
         ),
         launch_arguments={
-            "use_simple_controller": "True",
+            "use_simple_controller": "False",
             "use_python": "False"
         }.items(),
     )
     
-    # joystick = IncludeLaunchDescription(
-    #     os.path.join(
-    #         get_package_share_directory("midi_controller"),
-    #         "launch",
-    #         "joystick_teleop.launch.py"
-    #     ),
-    # )
+    joystick = IncludeLaunchDescription(
+        os.path.join(
+            get_package_share_directory("midi_controller"),
+            "launch",
+            "joystick_teleop.launch.py"
+        ),
+    )
     
     
     return LaunchDescription([
         hardware_interface,
         controller,
-        # joystick,
+        joystick,
     ])
