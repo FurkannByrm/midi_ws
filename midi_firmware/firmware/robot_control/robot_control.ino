@@ -73,7 +73,7 @@ void setup() {
   analogWrite(right_vref, 10);
   analogWrite(left_vref, 10);
   digitalWrite(right_ph, HIGH);
-  digitalWrite(left_ph, HIGH);
+  digitalWrite(left_ph, LOW);
 
 
 
